@@ -1,0 +1,7 @@
+x = in ;    # hooked to input
+fact = 1 ;
+while x do
+    fact = fact * x ;
+    x = x - 1 ;
+od
+out = fact ;  # hooked to output

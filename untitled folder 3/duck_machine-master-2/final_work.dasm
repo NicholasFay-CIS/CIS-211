@@ -1,0 +1,40 @@
+# Lovingly crafted by robots
+# 2018-06-05 14:05:21.565894 from awl/count_match.awl
+#
+	LOAD r1,r0,r0[510]
+ STORE r1,r0,r15[24]  # Access variable 'watch_1'
+ LOAD r1,r0,r15[26]  # Access variable 'const0_3'
+ STORE r1,r0,r15[23]  # Access variable 'count_2'
+	LOAD r1,r0,r0[510]
+ STORE r1,r0,r15[22]  # Access variable 'observe_4'
+loop_5:  #While loop
+ LOAD r2,r0,r15[21]  # Access variable 'observe_4'
+	SUB  r0,r2,r0
+   ADD/Z  r15,r0,r15[14] #Jump to endloop_6
+ LOAD r2,r0,r15[16]  # Access variable 'watch_1'
+ LOAD r3,r0,r15[17]  # Access variable 'observe_4'
+   SUB  r2,r2,r3
+	SUB  r0,r2,r0
+   ADD/Z  r15,r0,r15[2] #Jump to elsepart_8
+   ADD  r15,r0,r15[5] #Jump to endif_7
+elsepart_8:
+ LOAD r1,r0,r15[11]  # Access variable 'count_2'
+ LOAD r2,r0,r15[13]  # Access variable 'const1_9'
+   ADD  r1,r1,r2
+ STORE r1,r0,r15[8]  # Access variable 'count_2'
+endif_7:
+	LOAD r1,r0,r0[510]
+ STORE r1,r0,r15[7]  # Access variable 'observe_4'
+   ADD  r15,r0,r15[-15] #Jump to loop_5
+endloop_6:
+ LOAD r1,r0,r15[4]  # Access variable 'count_2'
+	STORE  r1,r0,r0[511]
+	HALT  r0,r0,r0
+watch_1: DATA 0 #watch
+count_2: DATA 0 #count
+observe_4: DATA 0 #observe
+const0_3:  DATA 0
+const1_9:  DATA 1
+
+
+

@@ -1,0 +1,30 @@
+# Lovingly crafted by robots
+# 2018-06-07 13:33:47.802693 from awl/in_out.awl
+#
+LOAD r1,r0,r0[510]
+STORE r1,r0,r15[18]
+LOAD r1,r0,r15[19]
+STORE r1,r0,r15[17]
+loop_4:  #While loop
+LOAD r2,r0,r15[15]
+SUB  r0,r2,r0
+ADD/Z r15,r0,r15[10]
+LOAD r1,r0,r15[13]
+LOAD r2,r0,r15[11]
+MUL r1,r1,r2
+STORE r1,r0,r15[10]
+LOAD r1,r0,r15[8]
+LOAD r2,r0,r15[9]
+SUB r1,r1,r2
+STORE r1,r0,r15[5]
+ADD r15,r0,r15[-11]
+endloop_5:
+LOAD r1,r0,r15[4]
+STORE  r1,r0,r0[511]
+HALT  r0,r0,r0
+x_1: DATA 0 #x
+fact_2: DATA 0 #fact
+const1_3:  DATA 1
+
+
+
